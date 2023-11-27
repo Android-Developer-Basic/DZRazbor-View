@@ -3,4 +3,5 @@
     <string name="close">Close</string>
     <string name="btn_next">Continue</string>
     <string name="word">Word</string>
+    <string name="correct">Correct!</string>
 </resources>

@@ -53,14 +53,38 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="135dp"
         android:background="@color/correct"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_height="135dp">
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_correct"
+            android:layout_marginStart="37dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/next"
+            android:contentDescription="@string/correct" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rubik"
+            android:textSize="22sp"
+            android:text="@string/correct"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_correct"
+            app:layout_constraintStart_toEndOf="@id/ic_correct"
+            app:layout_constraintTop_toTopOf="@+id/ic_correct" />
 
         <Button
+            android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_marginStart="24dp"
